@@ -1,0 +1,103 @@
+body {
+    background-color: black;
+    color: darkgoldenrod; /* Dark Yellow */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: darkgoldenrod;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.quote {
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+.section-title {
+    text-align: center;
+    margin: 40px 0 20px;
+    font-size: 2em;
+}
+
+.pets-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.pet-tile {
+    background-color: #222; /* Dark background for pet tiles */
+    border: 1px solid darkgoldenrod; /* Border color */
+    border-radius: 8px;
+    margin: 10px;
+    width: 30%; /* Width of each pet tile */
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.pet-tile img {
+    width: 30%; /* Adjusted to take up 40% of tile */
+    border-radius: 8px; /* Rounded corners for images */
+}
+
+.pet-info {
+    margin-left: 20px;
+    width: 70%; /* Ensure this takes the remaining space */
+}
+
+.pet-info h3 {
+    margin: 0;
+}
+
+.adopt-button {
+    background-color: darkgoldenrod; /* Button color */
+    color: black; /* Text color for button */
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.adopt-button:hover {
+    background-color: #ffcc00; /* Lighter yellow on hover */
+}
+
+/* Style for separating each pet */
+.pet-tile + .pet-tile {
+    border-top: 2px solid darkgoldenrod; /* Line between pets */
+    margin-top: 20px; /* Space above each pet tile */
+}
